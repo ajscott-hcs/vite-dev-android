@@ -1,4 +1,6 @@
-Minimal reproduction of a content-length-mismatch with vite + react + mui + sass when accessing a dev server on Android emulator 
+Minimal reproduction of a content-length-mismatch with vite + react + mui + sass when accessing a dev server on Android emulator.
+
+This does not occur when it is served through Preview or when deployed (build). Only on the dev server.
 
 To start run the following commands within `/my-app/`:
 
@@ -15,3 +17,6 @@ Navigate to the dev site (e.g., localhost:port -> 10.0.2.2:port)
 The site will either:
 - Work initially, and fail on subsequent reloads
 - Not work at all
+
+The error is here:
+![content-mismatch.png](./content-mismatch.png)
